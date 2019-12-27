@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
+    <select name="" id="theme">
+        <option value="0">Dark</option>
+        <option value="1">Light</option>
+        <option value="2">Blue</option>
+        <option value="3">Red</option>
+    </select>
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3 header">
@@ -30,17 +36,17 @@
                 <div id="outputer">
                     <div class="card">
                         <div class="card-block">
-                            <h4>Метры - <div id="firstOutput"></div></h4>
+                            <h4 id="firstTitle"><div id="firstOutput"></div></h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-block">
-                            <h4>Сантиметры - <div id="secondOutput"></div></h4>
+                            <h4 id="secondTitle"><div id="secondOutput"></div></h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-block">
-                            <h4>Миллиметры - <div id="thirdOutput"></div></h4>
+                            <h4 id="thirdTitle"><div id="thirdOutput"></div></h4>
                         </div>
                     </div>
                 </div>

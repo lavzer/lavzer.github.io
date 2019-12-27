@@ -7,13 +7,13 @@ body {
     background-color: #333;
 }
 
+.header {
+    margin-top: 70px;
+}
+
 h1  {
     color: aliceblue;
     margin-bottom: 50px;
-}
-
-.header {
-    margin-top: 70px;
 }
 
 h4 {
@@ -29,12 +29,14 @@ h4 {
 }
 
 #select {
-    width: 150px;
+    width: 170px;
     margin-bottom: 40px;
     height: 50px;
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .form-group {
@@ -45,4 +47,13 @@ input {
     width: 300px;
     height: 50px;
     font-size: 27px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#theme {
+    background-color: inherit;
+    border: 1px solid inherit;
+    width: 90px;
+    color: white;
 }

@@ -16,6 +16,27 @@ h1  {
     margin-top: 70px;
 }
 
+h4 {
+    display: inline-flex;
+}
+
+.card-block {
+    padding: 10px;
+}
+
+.select {
+    text-align: center;
+}
+
+#select {
+    width: 150px;
+    margin-bottom: 40px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
 .form-group {
     text-align: center;
 }

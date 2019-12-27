@@ -15,27 +15,40 @@
             <div class="col-md-6 offset-md-3 header">
                 <h1 class="display-3 text-center">Конвертор велечин</h1>
                 <form>
+                    <div class="select">
+                        <select name="" id="select">
+                            <option value="0" id="firstOption">Длина</option>
+                            <option value="1" id="secondOption">Вес</option>
+                            <option value="2" id="thirdOption">Скорость</option>
+                        </select>
+                    </div>
+                    <!--Длина-->
                     <div class="form-group">
-                        <input type="number" name="kmInput" id="kmInput" placeholder="Введите километры">
+                        <input type="number" name="kmInput" id="kmInput" placeholder="Введите километры" class="fomr-control form-control-lg">
+                    </div>
+                    <!--Вес-->
+                    <div class="form-group">
+                        <input type="number" name="wgInput" id="wgInput" placeholder="Введите килограммы" class="fomr-control form-control-lg">
+                    </div>
+                    <!--Скорость-->
+                    <div class="form-group">
+                        <input type="number" name="spdInput" id="spdInput" placeholder="Введите километры/час" class="fomr-control form-control-lg">
                     </div>
                 </form>
-                <div id="output">
+                <div id="lengthOutput">
                     <div class="card">
                         <div class="card-block">
-                            <h4>Метры - </h4>
-                            <div id="metersOutput"></div>
+                            <h4>Метры - <div id="metersOutput"></div></h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-block">
-                            <h4>Сантиметры - </h4>
-                            <div id="smOutput"></div>
+                            <h4>Сантиметры - <div id="smOutput"></div></h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-block">
-                            <h4>Миллиметры - </h4>
-                            <div id="milimetersOutput"></div>
+                            <h4>Миллиметры - <div id="milimetersOutput"></div></h4>
                         </div>
                     </div>
                 </div>

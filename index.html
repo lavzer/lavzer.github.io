@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 header">
+                <h1 class="display-3 text-center">Конвертор велечин</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="number" name="kmInput" id="kmInput" placeholder="Введите километры">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4>Метры - </h4>
+                            <div id="metersOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <h4>Сантиметры - </h4>
+                            <div id="smOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <h4>Миллиметры - </h4>
+                            <div id="milimetersOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/convertor.js"></script>
+</body>
+</html>

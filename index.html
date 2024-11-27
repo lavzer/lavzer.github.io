@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог битов</title>
+    <title>Мини-приложение для артистов</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .track { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        .track h3 { margin: 0; }
-        .track button { margin-top: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
-    <h1>Каталог битов</h1>
-    <div class="track">
-        <h3>Бит: Dream Beats</h3>
-        <audio controls>
-            <source src="https://www.example.com/dream-beats-demo.mp3" type="audio/mpeg">
-            Ваш браузер не поддерживает аудио.
-        </audio>
-        <button onclick="buyTrack('Dream Beats')">Купить</button>
+    <div class="container">
+        <h1>Добро пожаловать в наше мини-приложение!</h1>
+        <p>Здесь ты можешь узнать, как улучшить свою музыку и получить полезные советы!</p>
+        <button class="button" id="open-tool">Открыть инструмент</button>
     </div>
 
     <script>
-        async function buyTrack(trackName) {
-            const response = await fetch('/buy', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ track_name: trackName })
-            });
-            const result = await response.json();
-            alert(result.message);
-        }
+        document.getElementById('open-tool').onclick = function() {
+            window.location.href = "https://<твоя-ссылка-на-инструмент>"; // Ссылка на инструмент
+        };
     </script>
 </body>
 </html>
